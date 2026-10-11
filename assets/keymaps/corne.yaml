@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
-  default:
-  - ESC
+  base:
+  - ↹
   - Q
   - W
   - E
@@ -12,8 +12,8 @@ layers:
   - I
   - O
   - P
-  - ⌦
-  - ⌃
+  - {t: \, s: '|'}
+  - ⌘
   - {t: A, h: ⌘}
   - {t: S, h: ⎇}
   - {t: D, h: ⇧}
@@ -36,93 +36,103 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - /
-  - ⎇
-  - ⌘
-  - {t: ↹, h: nav, s: _}
-  - {t: ⎵, h: kb_utils}
-  - {t: ⏎, h: num}
-  - {t: ⌫, h: symb}
-  - {t: ⇧, h: sticky}
+  - ⏎
+  - num
+  - {t: ⎵, h: ⌃}
+  - {t: ⌫, h: sym}
+  - ⌫
+  - {t: ⎵, h: nav}
+  - mouse
+  sym:
+  - {t: '`', s: '~'}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - '7'
+  - '8'
+  - '9'
+  - '-'
+  - /
+  - F12
+  - {t: ▽, type: trans}
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - '4'
+  - '5'
+  - '6'
+  - +
+  - '*'
+  - ⌫
+  - {t: ▽, type: trans}
+  - '~'
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - '{'
+  - '}'
+  - '1'
+  - '2'
+  - '3'
+  - {t: ., s: '>'}
+  - {t: '=', s: +}
+  - ⏎
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - '0'
+  - {t: ▽, type: trans}
   nav:
+  - ESC
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - 'Ctl+Gui
+
+    Sft+4'
+  - PG UP
+  - HOME
   - {t: ▽, type: trans}
+  - END
   - {t: ▽, type: trans}
-  - LClk
-  - MOUSE ←
-  - MOUSE ↓
-  - MOUSE ↑
-  - MOUSE →
-  - '&mkp RCLK'
-  - {t: ▽, type: trans}
+  - 'VOL
+
+    UP'
+  - ⌘
   - ⌘
   - ⎇
   - ⇧
-  - ⌃
-  - {t: ▽, type: trans}
-  - MENU
+  - 'Ctl+Sft
+
+    Tab'
+  - ⌃↹
   - ←
   - ↓
   - ↑
   - →
-  - CMENU
+  - {t: ▽, type: trans}
+  - MUTE
+  - ⇧
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+Gui+←
-  - Ctl+Gui+→
-  - BACK
-  - HOME
+  - 'Ctl+Gui
+
+    ←'
+  - 'Ctl+Gui
+
+    →'
   - PG DN
-  - PG UP
-  - END
-  - FORWARD
-  - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  symb:
-  - {t: ▽, type: trans}
-  - '!'
-  - '?'
-  - '{'
-  - '}'
-  - +
-  - $
-  - {t: '`', s: '~'}
-  - '%'
-  - £
-  - ^
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - <
-  - {t: '>', s: =>}
-  - {t: (, h: ⇧}
-  - {t: ), h: ⌃}
-  - '-'
-  - {t: '=', s: +}
-  - {t: '''', h: ⌃}
-  - {t: '&', h: ⇧}
-  - '@'
-  - ':'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - \
-  - {t: /, s: '?'}
-  - '['
-  - ']'
-  - '*'
-  - _
-  - '"'
-  - '|'
-  - '#'
-  - '~'
-  - {t: ▽, type: trans}
+  - ⏮
+  - ⏯
+  - ⏭
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -130,6 +140,18 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   num:
+  - {t: '`', s: '~'}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '-'
   - ESC
   - F1
   - F2
@@ -143,59 +165,96 @@ layers:
   - F10
   - F11
   - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - {t: '4', h: ⌃}
-  - '5'
-  - '6'
-  - {t: '7', h: ⌃}
-  - '8'
-  - '9'
-  - '0'
+  - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+1
-  - Sft+2
-  - Sft+3
-  - Sft+4
-  - Sft+5
-  - Sft+6
-  - Sft+7
-  - Sft+8
-  - Sft+9
-  - Sft+0
-  - ⎇
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - <
+  - '>'
   - _
-  - {t: ▽, type: trans}
+  - +
+  - {t: '=', s: +}
+  - 'VOL
+
+    DOWN'
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  kb_utils:
-  - BOOT
-  - ''
-  - ''
-  - ''
-  - ''
-  - Sft+Ctl+Gui+4
-  - ''
-  - LClk
-  - RClk
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  mouse:
+  - ESC
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
   - Mid Clk
+  - SCROLL ↑
   - ''
-  - UNLOCK
   - ''
-  - ⏮
-  - MUTE
-  - ⏯
-  - ⏭
   - ''
+  - ''
+  - ''
+  - ''
+  - ⌘
+  - ⌘
+  - ⎇
+  - RClk
+  - LClk
+  - SCROLL ↓
   - ''
   - MOUSE ←
   - MOUSE ↓
   - MOUSE ↑
   - MOUSE →
+  - ''
+  - ⇧
+  - ''
+  - ''
+  - ''
+  - 'Ctl+Gui
+
+    ←'
+  - 'Ctl+Gui
+
+    →'
+  - BACK
+  - SCROLL ←
+  - SCROLL ↓
+  - SCROLL ↑
+  - SCROLL →
+  - FORWARD
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LClk
+  - RClk
+  - {type: held}
+  sys:
+  - BOOT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - UNLOCK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - BT CLR
   - {t: BT, h: '0'}
@@ -204,40 +263,21 @@ layers:
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - ''
-  - BACK
-  - SCROLL ↓
-  - SCROLL ↑
-  - FORWARD
+  - ''
+  - ''
   - ''
   - ''
   - ''
   - {type: held}
-  - LClk
-  - RClk
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
 combos:
-- p: [17, 18]
-  k: ⇪ WORD
-  l: [default]
-- p: [11, 23]
-  k: 'VOL
-
-    UP'
-  l: [default]
-- p: [23, 35]
-  k: 'VOL
-
-    DOWN'
-  l: [default]
-- p: [5, 6]
-  k: ⇪ LOCK
-  l: [default]
-- p: [10, 9]
+- p: [37, 38]
+  k: ESC
+  l: [base]
+- p: [39, 40]
   k: ⌦
-  l: [default]
-- p: [7, 19]
-  k: ''''
-  l: [default]
-- p: [8, 20]
-  k: '"'
-  l: [default]
+  l: [base]

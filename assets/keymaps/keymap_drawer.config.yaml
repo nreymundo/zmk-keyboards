@@ -122,6 +122,10 @@ parse_config:
   preprocess: true
   skip_binding_parsing: false
   raw_binding_map:
+    "&kp LC(LG(LEFT))": "Ctl+Gui\n←"
+    "&kp LC(LG(RIGHT))": "Ctl+Gui\n→"
+    "&kp LC(LS(TAB))": "Ctl+Sft\nTab"
+    "&kp LS(LC(LG(N4)))": "Ctl+Gui\nSft+4"
     "&mm_grescm":
       t: ⎋
       s: "` ~"
@@ -233,6 +237,8 @@ parse_config:
 
     "&msc SCRL_DOWN": SCROLL ↓
     "&msc SCRL_UP": SCROLL ↑
+    "&msc SCRL_LEFT": SCROLL ←
+    "&msc SCRL_RIGHT": SCROLL →
 
     "&bootloader": BOOT
     "&studio_unlock": UNLOCK
